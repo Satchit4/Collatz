@@ -1,12 +1,5 @@
 # Collatz
 
-This repository contains a small C++ implementation of Collatz-Weyl
-pseudorandom number generators based on the 128-bit variants described in the
-Collatz-Weyl generator paper.
-
-The implementation is header-only. The example program shows how to use the
-generator like a standard C++ PRNG engine.
-
 ## Motivation
 
 Pseudorandom number generators are a core numerical tool for simulations,
@@ -23,6 +16,13 @@ Collatz-Weyl generator implementation that can be evaluated for faster
 prediction time in kMC-style simulations.
 
 ## Files
+
+This repository contains a small C++ implementation of Collatz-Weyl
+pseudorandom number generators based on the 128-bit variants described in the
+Collatz-Weyl generator paper.
+
+The implementation is header-only. The example program shows how to use the
+generator like a standard C++ PRNG engine.
 
 - `cwg_prng.hpp`: header-only PRNG implementation.
 - `cwg_example.cpp`: example program that prints sample values and uses the
