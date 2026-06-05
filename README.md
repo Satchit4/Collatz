@@ -103,6 +103,15 @@ For convenience, `Cwg128` also has `next()` when you only need the low 64 bits:
 std::uint64_t low64 = rng.next();
 ```
 
+## Reference
+
+This implementation is based on:
+
+Tomasz R. Działa, "Collatz-Weyl Generators: High Quality and High Throughput
+Parameterized Pseudorandom Number Generators," arXiv:2312.17043, 2023; revised
+2024. DOI: [10.48550/arXiv.2312.17043](https://doi.org/10.48550/arXiv.2312.17043).
+Available at [arXiv:2312.17043](https://arxiv.org/abs/2312.17043).
+
 ## Notes
 
 This code is intended for experimentation with Collatz-Weyl generators. Do not
