@@ -7,6 +7,21 @@ Collatz-Weyl generator paper.
 The implementation is header-only. The example program shows how to use the
 generator like a standard C++ PRNG engine.
 
+## Motivation
+
+Pseudorandom number generators are a core numerical tool for simulations,
+sampling, randomized algorithms, and uncertainty quantification. In Monte Carlo
+methods, the quality of the random stream directly affects statistical
+uniformity, convergence behavior, and the reliability of estimated observables.
+
+This implementation is motivated by kinetic Monte Carlo (kMC) workflows, where
+large numbers of random variates are consumed while selecting stochastic events
+and advancing simulation time. Faster PRNG implementations can reduce the random
+number generation bottleneck, while good stochastic uniformity helps preserve the
+physical fidelity of event sampling. The goal here is to provide a compact C++
+Collatz-Weyl generator implementation that can be evaluated for faster
+prediction time in kMC-style simulations.
+
 ## Files
 
 - `cwg_prng.hpp`: header-only PRNG implementation.
